@@ -19,5 +19,5 @@ app.use("/favicon-32x32.png", express.static("assets/meta/favicon-32x32.png"));
 app.use("/site.webmanifest", express.static("assets/meta/site.webmanifest"));
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Listening on port ${port}`);
 });
