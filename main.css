@@ -19,7 +19,7 @@ html[dark="true"] #page-description {
   flex-direction: column;
   list-style: none;
   padding: 0;
-  border: 1px solid var(--neutral-800);
+  border: 2px solid var(--neutral-800);
   border-radius: 5px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   margin: 0;

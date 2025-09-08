@@ -7,9 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Jonathan E | Portfolio</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="Software Engineer, Web Developer, Freelance, Jonathan E">
+  <title>Jonathan E | Projects</title>
+  <meta name="description"
+    content="I'm Jonny your friendly neighbourhood software engineer and web developer. For the last few years I've been working freelance as a full-stack developer whilst also studying Computer Science at the University of St Andrews. Now I spend my days (and most nights) making fun things for your computer.">
+  <meta name="keywords" content="Software Engineer, Web Developer, Freelance, Jonathan E, Projects">
   <meta name="author" content="Jonathan E">
 
   <link rel="apple-touch-icon" sizes="180x180" href="../assets/meta/apple-touch-icon.png">
@@ -18,26 +19,13 @@
   <link rel="icon" type="image/ico" href="../assets/meta/favicon.ico">
   <link rel="manifest" href="../assets/meta/site.webmanifest">
 
-  <link rel="stylesheet" href="../global.css">
+  <link rel="stylesheet" href="../assets/global.css">
   <link rel="stylesheet" href="main.css">
-
-  <script>
-    function setupTheme() {
-      const html = document.querySelector("html");
-      const stored = document.cookie.split(";")[0].split("=");
-
-      if (stored[0] === "dark") {
-        html.setAttribute("dark", stored[1]);
-      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        html.setAttribute("dark", "true");
-        document.cookie = "dark=true; path=/";
-      }
-    }
-    setupTheme();
-  </script>
 </head>
 
 <body>
+  <script src="../assets/theme.js"></script>
+
   <header id="main-header">
     <a id="main-title" href="/">
       <h2>Jonathan E</h2>
@@ -77,6 +65,152 @@
     <p id="page-description">Check out some of my latest and greatest projects here. I've recently been more focused on
       web dev, but I have a history of working in a range of languages including but not limited to C, Java, Rust,
       Python and more.</p>
+
+    <div class="content">
+      <article class="project">
+        <img src="../assets/images/moh-cover.png" alt="Message of Hope cover image" />
+
+        <div class="project-text">
+          <h2 class="project-title">Messages of Hope</h2>
+          <p class="project-description">This is the official web application for Messages of Hope, a Community Interest
+            Company dedicated to supporting mental health and well-being. Created using NextJS, React, Typescript,
+            TailwindCSS, and other latest technologies.</p>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/jonathandevans/messages-of-hope" class="github" target="_blank">
+            <svg aria-hidden="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-github-icon lucide-github">
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+            <span>View Code</span></a>
+          <a class="live-project" href="https://www.messagesofhope.co.uk/" target="_blank">
+            <svg aria-hidden="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-package-open-icon lucide-package-open">
+              <path d="M12 22v-9" />
+              <path
+                d="M15.17 2.21a1.67 1.67 0 0 1 1.63 0L21 4.57a1.93 1.93 0 0 1 0 3.36L8.82 14.79a1.655 1.655 0 0 1-1.64 0L3 12.43a1.93 1.93 0 0 1 0-3.36z" />
+              <path
+                d="M20 13v3.87a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13" />
+              <path
+                d="M21 12.43a1.93 1.93 0 0 0 0-3.36L8.83 2.2a1.64 1.64 0 0 0-1.63 0L3 4.57a1.93 1.93 0 0 0 0 3.36l12.18 6.86a1.636 1.636 0 0 0 1.63 0z" />
+            </svg>
+            <span>Live Project</span></a>
+        </div>
+      </article>
+
+      <article class="project">
+        <img src="../assets/images/gomoku-cover.jpg" alt="Gomoku cover image" />
+
+        <div class="project-text">
+          <h2 class="project-title">Gomoku</h2>
+          <p class="project-description">This project is a Haskell implementation of the game Gomoku allowing for single
+            player, local multiplayer and online multiplayer, using a custom peer-to-peer protocol.</p>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/jonathandevans/gomoku" class="github" target="_blank">
+            <svg aria-hidden="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-github-icon lucide-github">
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+            <span>View Code</span></a>
+          <a disabled="true" class="live-project">
+            <svg aria-hidden="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-package-open-icon lucide-package-open">
+              <path d="M12 22v-9" />
+              <path
+                d="M15.17 2.21a1.67 1.67 0 0 1 1.63 0L21 4.57a1.93 1.93 0 0 1 0 3.36L8.82 14.79a1.655 1.655 0 0 1-1.64 0L3 12.43a1.93 1.93 0 0 1 0-3.36z" />
+              <path
+                d="M20 13v3.87a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13" />
+              <path
+                d="M21 12.43a1.93 1.93 0 0 0 0-3.36L8.83 2.2a1.64 1.64 0 0 0-1.63 0L3 4.57a1.93 1.93 0 0 0 0 3.36l12.18 6.86a1.636 1.636 0 0 0 1.63 0z" />
+            </svg>
+            <span>Live Project</span></a>
+        </div>
+      </article>
+
+      <article class="project">
+        <img src="../assets/images/slack-clone-cover.png" alt="Slack Clone cover image" />
+
+        <div class="project-text">
+          <h2 class="project-title">Slack Clone</h2>
+          <p class="project-description">This is a custom Slack clone including features such as OAuth, direct messages,
+            and team channels. Created using NextJS, React, Typescript, TailwindCSS, and other latest technologies, and
+            uses popular packages such as Quill to create a text editor.
+          </p>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/jonathandevans/slack" class="github" target="_blank">
+            <svg aria-hidden="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-github-icon lucide-github">
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+            <span>View Code</span></a>
+          <a class="live-project" disabled="true">
+            <svg aria-hidden="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-package-open-icon lucide-package-open">
+              <path d="M12 22v-9" />
+              <path
+                d="M15.17 2.21a1.67 1.67 0 0 1 1.63 0L21 4.57a1.93 1.93 0 0 1 0 3.36L8.82 14.79a1.655 1.655 0 0 1-1.64 0L3 12.43a1.93 1.93 0 0 1 0-3.36z" />
+              <path
+                d="M20 13v3.87a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13" />
+              <path
+                d="M21 12.43a1.93 1.93 0 0 0 0-3.36L8.83 2.2a1.64 1.64 0 0 0-1.63 0L3 4.57a1.93 1.93 0 0 0 0 3.36l12.18 6.86a1.636 1.636 0 0 0 1.63 0z" />
+            </svg>
+            <span>Live Project</span></a>
+        </div>
+      </article>
+
+      <article class="project">
+        <img src="../assets/images/phonearmour-cover.png" alt="PhoneArmour cover image" />
+
+        <div class="project-text">
+          <h2 class="project-title">PhoneArmour</h2>
+          <p class="project-description">An example web app used to design and purchase a custom phone case by uploading
+            an image. Created using NextJS, React, Typescript, TailwindCSS, and other latest technologies.
+          </p>
+        </div>
+
+        <div class="project-links">
+          <a href="https://github.com/jonathandevans/phonearmour" class="github" target="_blank">
+            <svg aria-hidden="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-github-icon lucide-github">
+              <path
+                d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+              <path d="M9 18c-4.51 2-5-2-7-2" />
+            </svg>
+            <span>View Code</span></a>
+          <a class="live-project" disabled="true">
+            <svg aria-hidden="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="lucide lucide-package-open-icon lucide-package-open">
+              <path d="M12 22v-9" />
+              <path
+                d="M15.17 2.21a1.67 1.67 0 0 1 1.63 0L21 4.57a1.93 1.93 0 0 1 0 3.36L8.82 14.79a1.655 1.655 0 0 1-1.64 0L3 12.43a1.93 1.93 0 0 1 0-3.36z" />
+              <path
+                d="M20 13v3.87a2.06 2.06 0 0 1-1.11 1.83l-6 3.08a1.93 1.93 0 0 1-1.78 0l-6-3.08A2.06 2.06 0 0 1 4 16.87V13" />
+              <path
+                d="M21 12.43a1.93 1.93 0 0 0 0-3.36L8.83 2.2a1.64 1.64 0 0 0-1.63 0L3 4.57a1.93 1.93 0 0 0 0 3.36l12.18 6.86a1.636 1.636 0 0 0 1.63 0z" />
+            </svg>
+            <span>Live Project</span></a>
+        </div>
+      </article>
+    </div>
   </main>
 
   <footer id="main-footer">
@@ -84,7 +218,7 @@
     <p>Smile, you're alive :)</p>
   </footer>
 
-  <script src="../global.js"></script>
+  <script src="../assets/global.js"></script>
 </body>
 
 </html>

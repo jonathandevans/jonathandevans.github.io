@@ -22,3 +22,114 @@ html[dark="true"] #page-title {
 html[dark="true"] #page-description {
   color: var(--neutral-200);
 }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.project {
+  color: var(--neutral-800);
+  border: 2px solid var(--neutral-800);
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+html[dark="true"] .project {
+  box-shadow: 4px 4px 8px rgba(89, 89, 89, 0.5);
+}
+
+.project img {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  border-bottom: solid 2px var(--neutral-800);
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 8px auto;
+  padding: 8px 24px;
+}
+
+.project-title {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.project-description {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.project-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.project-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 0;
+  border-top: 2px solid var(--neutral-800);
+  transition: all 200ms ease-in-out;
+  color: var(--neutral-800);
+  text-decoration: none;
+}
+
+.project-links .github {
+  border-right: 1px solid var(--neutral-800);
+}
+
+.project-links .live-project {
+  border-left: 1px solid var(--neutral-800);
+}
+
+html[dark="true"] .project,
+html[dark="true"] .project img,
+html[dark="true"] .project-links a,
+html[dark="true"]
+  .project-links
+  .live-project
+  html[dark="true"]
+  .project-links
+  .github {
+  color: var(--neutral-300);
+  border-color: var(--neutral-300);
+}
+
+.project-links a:hover {
+  background-color: var(--neutral-200);
+}
+
+html[dark="true"] .project-links a:hover {
+  background-color: var(--neutral-700);
+}
+
+.project-links a svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: all 200ms ease-in-out;
+}
+
+.project-links a:not([disabled="true"]):hover svg {
+  color: var(--blue-500);
+  transform: scale(1.1);
+}
+
+.project-links a[disabled="true"] {
+  background: var(--neutral-300);
+  color: var(--neutral-500);
+  cursor: default;
+}
+
+html[dark="true"] .project-links a[disabled="true"] {
+  background-color: var(--neutral-600);
+  color: var(--neutral-500);
+}
