@@ -10,7 +10,7 @@ main {
   font-size: 0.9rem;
 }
 
-html[dark="true"] .description {
+html[dark="true"] #page-description {
   color: var(--neutral-200);
 }
 

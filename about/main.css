@@ -10,7 +10,13 @@ main {
   font-size: 2rem;
 }
 
-#page-description {
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.content p {
   margin: 0;
   font-size: 0.9rem;
 }
@@ -19,6 +25,6 @@ html[dark="true"] #page-title {
   color: var(--neutral-200);
 }
 
-html[dark="true"] #page-description {
+html[dark="true"] .content p {
   color: var(--neutral-200);
 }
