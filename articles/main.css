@@ -1,0 +1,37 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 24px auto 48px auto;
+}
+
+#page-title {
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+#page-description {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+html[dark="true"] #page-title {
+  color: var(--neutral-200);
+}
+
+html[dark="true"] #page-description {
+  color: var(--neutral-200);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  color: var(--neutral-600);
+}
+
+html[dark="true"] .content {
+  color: var(--neutral-400);
+}
