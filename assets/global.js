@@ -7,7 +7,7 @@ function setupToggleTheme() {
     const value = current === "true" ? "false" : "true";
 
     html.setAttribute("dark", value);
-    document.cookie = `dark=${value}`;
+    document.cookie = `dark=${value}; path=/`;
   };
 
   toggleTheme.onclick = click;
