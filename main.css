@@ -5,7 +5,7 @@ main {
   margin: 24px auto 48px auto;
 }
 
-.description {
+#page-description {
   margin: 0;
   font-size: 0.9rem;
 }

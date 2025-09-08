@@ -24,13 +24,13 @@
   <script>
     function setupTheme() {
       const html = document.querySelector("html");
-      const stored = document.cookie.split("=");
+      const stored = document.cookie.split(";")[0].split("=");
 
       if (stored[0] === "dark") {
         html.setAttribute("dark", stored[1]);
       } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
         html.setAttribute("dark", "true");
-        document.cookie = "dark=true";
+        document.cookie = "dark=true; path=/";
       }
     }
     setupTheme();
@@ -39,10 +39,10 @@
 
 <body>
   <header id="main-header">
-    <div id="main-title">
+    <a id="main-title" href="/">
       <h2>Jonathan E</h2>
       <h3>Software Engineer</h3>
-    </div>
+    </a>
 
     <nav id="main-nav">
       <button id="toggle-theme">
@@ -73,7 +73,7 @@
   </header>
 
   <main>
-    <p class="description">I'm Jonny your friendly neighbourhood software engineer and web developer. For the last few
+    <p id="page-description">I'm Jonny your friendly neighbourhood software engineer and web developer. For the last few
       years I've been working freelance as a full-stack developer whilst also studying Computer Science at the
       University of St Andrews. Now I spend my days (and most nights) making fun things for your computer.</p>
 

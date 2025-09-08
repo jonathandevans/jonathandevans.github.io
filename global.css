@@ -67,6 +67,7 @@ html[dark="true"] body {
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
+  text-decoration: none;
 }
 
 @media (min-width: 28rem) {
