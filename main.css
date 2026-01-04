@@ -41,6 +41,7 @@ html[dark="true"] #links-card {
   transition: all 200ms ease-in-out;
   color: var(--neutral-800);
   text-decoration: none;
+  overflow: hidden;
 }
 
 html[dark="true"] #links-card .link {
